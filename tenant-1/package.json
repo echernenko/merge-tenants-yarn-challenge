@@ -7,8 +7,9 @@
     "rimraf": "^3.0.2"
   },
   "resolutions": {
-    "balanced-match": "1.0.0",
+    "//comment": "rimraf depends on minimatch",
     "minimatch": "5.0.0",
+    "//comment": "minimatch depends on brace-expansion",
     "brace-expansion": "2.0.0"
   }
 }
