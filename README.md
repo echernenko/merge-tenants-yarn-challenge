@@ -36,7 +36,7 @@ and another:
 }
 ```
 
-conslusions:
+results in:
 - rimraf dependency versions are different (^3.0.2 vs 2.7.0)
 - dependency of dependency versions via resolutions key are very different: minimatch (5.0.0 vs 4.0.0)
 - dependency of dependency of dependency versions are very different: brace-expansion (2.0.0 vs 1.1.5)
