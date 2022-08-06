@@ -1,4 +1,49 @@
-## Merging Tenants Issue with yarn
+## Merging Tenants Challenge with yarn
+
+TLDR;
+
+Having one tenant:
+
+```
+{
+  "name": "tenant-1",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "resolutions": {
+    "//comment": "rimraf depends on minimatch",
+    "minimatch": "5.0.0",
+    "//comment": "minimatch depends on brace-expansion",
+    "brace-expansion": "2.0.0"
+  }
+}
+```
+
+and another:
+
+```
+{
+  "name": "tenant-2",
+  "dependencies": {
+    "rimraf": "2.7.0"
+  },
+  "resolutions": {
+    "//comment": "rimraf depends on minimatch",
+    "minimatch": "4.0.0",
+    "//comment": "minimatch depends on brace-expansion",
+    "brace-expansion": "1.1.5"
+  }
+}
+```
+
+conslusions:
+- rimraf dependency versions are different (^3.0.2 vs 2.7.0)
+- dependency of dependency versions via resolutions key are very different: minimatch (5.0.0 vs 4.0.0)
+- dependency of dependency of dependency versions are very different: brace-expansion (2.0.0 vs 1.1.5)
+- merging tenants become very complicated without deep refactoring and re-working business logic
+
+
+raw notes on reproducing challenge:
 
 ```
 mkdir merging-tenants-issue
