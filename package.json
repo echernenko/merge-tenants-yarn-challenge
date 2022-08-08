@@ -4,9 +4,11 @@
     "main": "index.js",
     "license": "MIT",
     "private": "true",
-    "workspaces": [
-        "tenant-1/*",
-        "tenant-2/*"
-      ]
+    "workspaces": {
+        "packages": [
+            "tenant-1/*",
+            "tenant-2/*"
+        ]
+    }
   }
   
