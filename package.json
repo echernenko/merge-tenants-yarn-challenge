@@ -1,0 +1,17 @@
+{
+    "name": "root",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "workspaces": {
+      "packages": [
+        "tenant-1/packages/*",
+        "tenant-2/packages/*"
+      ]
+    },
+    "dependencies": {
+      "rimraf": "2.7.0"
+    }
+  }
+  

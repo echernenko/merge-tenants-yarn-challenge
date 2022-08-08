@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "private": "true",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "dependencies": {
     "rimraf": "2.7.0"
   },
   "resolutions": {
-    "//comment": "rimraf depends on minimatch",
     "minimatch": "4.0.0",
-    "//comment": "minimatch depends on brace-expansion",
     "brace-expansion": "1.1.5"
   }
 }

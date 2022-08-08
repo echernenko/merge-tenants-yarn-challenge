@@ -1,0 +1,13 @@
+{
+    "name": "pkg-4",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^4.7.0"
+    }
+  }
+  
