@@ -84,8 +84,5 @@ yarn install
 # it is impossible due to compliance reasons
 # we could adopt "resolutions": { "balanced-match": "2.0.0" }
 # but this will force rewriting business logic of the tenants
-#
-# how to repro recursion - facing challenges resolutions of resolutions?
-# can you help?
 
 ```
