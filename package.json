@@ -3,12 +3,14 @@
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
-    "private": "true",
-    "workspaces": {
-        "packages": [
-            "tenant-1/*",
-            "tenant-2/*"
-        ]
-    }
+    "dependencies": {
+        "rimraf": "^3.0.2"
+      },
+      "resolutions": {
+        "//comment": "rimraf depends on minimatch - accepting value from tenant-2",
+        "minimatch": "5.0.0",
+        "//comment": "minimatch depends on brace-expansion - accepting value from tenant-2",
+        "brace-expansion": "2.0.0"
+      }
   }
   
