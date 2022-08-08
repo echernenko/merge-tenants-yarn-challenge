@@ -7,9 +7,9 @@
         "rimraf": "^3.0.2"
       },
       "resolutions": {
-        "//comment": "rimraf depends on minimatch - accepting value from tenant-2",
+        "//comment": "rimraf depends on minimatch - accepting value from tenant-2 (it's higher)",
         "minimatch": "5.0.0",
-        "//comment": "minimatch depends on brace-expansion - accepting value from tenant-2",
+        "//comment": "minimatch depends on brace-expansion - accepting value from tenant-2 (it's higher)",
         "brace-expansion": "2.0.0"
       }
   }
